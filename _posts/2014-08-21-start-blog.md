@@ -8,6 +8,7 @@ intro: "blogging is good."
 description: "start to blogging."
 keywords: [autumn]
 rating: "1 / 5"
+math: TRUE
 buy:
   amazon: 
 image:
@@ -20,7 +21,7 @@ date: 2014-08-21
 
 ### mathjax
 
-$$lambda$$
+$$\lambda$$
 
-inline math //[ lambda //] should ok.
+inline math //[ \lambda //] should ok. $$\lambda$$
 
