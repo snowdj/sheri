@@ -1,81 +1,56 @@
-title: "Sheri's Blog"
-tagline: Digital home.
-description: "A collection of writings and updates from Sheri."
-keywords: ["Sheri","Stock", "China"] 
-url: http://snowdj.github.io/sheri
-files: http://snowdj.github.io/sheri/files
+title:            andrewlewiscampbell.github.io
+tagline:          github pages
+description:      Describe your website.
+#Comment out url when working locally to resolve base urls correctly
+url: 
 
 # Owner/author information
 owner:
-  name:           Sheri
-  email:          mail@
-  twitter:        snowdj1984
-  facebook:       
-  broadcast:      ""
-  amazon:         ""
-  goodreads:      
-  disqus: snowdj
-  location: "Canada"
-  github:         
-    user:         Sheri
-    repo:         
-
-analytics:
-    google:
-        code:     #UA-47683767-1
-        name:     #vernonking.org
-    #gosquared:  GSN-467829-L
+  name:           Andrew Campbell
+  avatar:         avatar.png
+  bio:            "Breaker of Shit"
+  email:          andrewlewiscampbell@gmail.com
+  twitter:        andrewlcampbell        
+  github:         andrewlewiscampbell
+  instagram:      andrewlewiscampbell
+  disqus:         andrewlewiscampbell
+  # Plug in your disqus shortname!
+  
 
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: CV
-    url: /cv/
-  - title: blogs
-    url: /blogs/
-  - title: Papers
-    url: /papers/
-  - title: Reviews
-    url: /reviews/
-  - title: Archives
-    url: /archives/
   - title: About
-    url: /about/
+    url: about
+  - title: Balzac
+    url: https://github.com/ColeTownsend/Balzac-for-Jekyll
+    external: true
+  - title: Andrew
+    url: http://andrewlewiscampbell.co.uk
+    external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
 future:      true
-highlighter: pygments
+pygments:    true
 markdown:    kramdown
-redcarpet:
-  extensions: ['smart', 'tables', 'no_intra_emphasis', 'autolink', 'footnotes', 'superscript']
+
 kramdown:
-  input: GFM
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
   use_coderay: false
+
   coderay:
-    coderay_line_numbers:
+    coderay_line_numbers: 
     coderay_line_numbers_start: 1
     coderay_tab_width: 4
     coderay_bold_every: 10
     coderay_css: class
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
-relative_permalinks: false
+permalink:   /:categories/:title
 
-sass:
-    style: :compressed
-    sass_dir: assets/sass
-
-archive:
-    month_format: "%Y-%b"
-
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "LICENSE", "Gemfile", "CNAME", "*.sh", "*.pxm"]
-
-color:
-  darkblue:  24536b
-  lightblue: 8AB9D1
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]

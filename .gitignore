@@ -1,8 +1,0 @@
-_site/
-Gemfile.lock
-.bundle
-.sass-cache
-
-# IntelliJ Idea project info
-.idea
-*.iml

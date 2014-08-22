@@ -1,5 +1,5 @@
 ---
-layout: nil
+layout: none
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
@@ -15,7 +15,7 @@ layout: nil
   <uri>{{ site.url }}/</uri>
   <email>{{ site.owner.email }}</email>
 </author>
-{% for post in site.posts limit:10 %}
+{% for post in site.posts limit:20 %}
 
 <entry>
   <title type="html"><![CDATA[{{ post.title | cdata_escape }}]]></title>
@@ -30,12 +30,8 @@ layout: nil
     <uri>{{ site.url }}</uri>
     <email>{{ site.owner.email }}</email>
   </author>
-  <content type="html">
-      {% if post.context %}&lt;p&gt;{{ post.context | xml_escape }}&lt;/p&gt;{% endif %}
-      {% if post.intro %}&lt;p&gt;{{ post.intro | xml_escape }}&lt;/p&gt;{% endif %}
-      {{ post.content | xml_escape }}
-      &lt;p&gt;&lt;a href=&quot;{{ site.url }}{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt; was originally published by {{ site.owner.name }} at &lt;a href=&quot;{{ site.url }}&quot;&gt;{{ site.title }}&lt;/a&gt; on {{ post.date | date: "%B %d, %Y" }}.&lt;/p&gt;
-  </content>
+  <content type="html">{{ post.content | xml_escape }}
+  &lt;p&gt;&lt;a href=&quot;{{ site.url }}{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt; was originally published by {{ site.owner.name }} at &lt;a href=&quot;{{ site.url }}&quot;&gt;{{ site.title }}&lt;/a&gt; on {{ post.date | date: "%B %d, %Y" }}.&lt;/p&gt;</content>
 </entry>
 {% endfor %}
 </feed>

@@ -1,61 +1,22 @@
----
-layout: default
----
+{% include head-dark.html %}
 
-{% if page.category %}
-    {% assign post_list = site.categories[page.category] %}
-    {% assign icon_class = "fa-folder-open" %}
-    {% assign screader = "Category" %}
-{% elsif page.tag %}
-    {% assign post_list = site.tags[page.tag] %}
-    {% assign icon_class = "fa-tag" %}
-    {% assign screader = "Tag" %}
-{% else %}
-    {% assign post_list = site.posts %}
-    {% assign icon_class = "fa-calendar" %}
-    {% assign screader = "Date" %}
-{% endif %}
+    <div id='bump'>
+        <section class="article archive">
+          <article class="archive-wrap">
+              <ol class="post-list">
+                 <lh><h2><span class="bb">{{ page.title }}</span></h2></lh>
+                  {% for post in site.posts %}
+                  <li>
+                    <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+                        <p class="date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" }}</time></p>
+                        <p class="">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
+                    </div>
+                  </li>
+                  {% endfor %}
+              </ol>
+          </article>
+        </section>
+    </div>
 
-<section class="article archive">
-    <article class="archive-wrap">
-        <ul class="post-list">
-            <h1>
-                <i class="fa {{ icon_class }}"></i>
-                <span id="{{ page.title }}"class="bb">{{ page.title }}</span>
-            </h1>
-            {% for post in post_list %}
-                {% capture date %}{{ post.date }}{% endcapture %}
-                {% capture year %}{{ date | date: "%Y" }}{% endcapture %}
-                {% capture month %}{{ date | date: site.archive.month_format }}{% endcapture %}
-
-                {% if month_index != month %}
-                    {% assign month_index = month %}
-                    {% unless forloop.first %}
-                        </ul>
-                    </li>
-                    {% endunless %}
-                    {% if year_index != year %}
-                        {% assign year_index = year %}
-                        {% unless forloop.first %}
-                </ul>
-            </li>
-                        {% endunless %}
-            <li id="{{year}}" class="year">
-                <h2>{{year}}</h2>
-                <ul class="months">
-                    {% endif %}
-                    <li id="{{month}}">
-                        <h3>{{ date | date: "%B %Y" }}</h3>
-                        <ul>
-                {% endif %}
-                            <li>{% include post-entry.html %}</li>
-            {% endfor %}
-            {% if post_list.size > 0 %}
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            {% endif %}
-        </ul>
-    </article>
-</section>
+{% include footer.html %}
