@@ -68,6 +68,22 @@
 <script src="{{ site.url }}/assets/js/html5shiv.js"></script>
 <![endif]-->
 
+
+<!-- Load MathJax for LaTeX awesomeness : from https://github.com/allanino/allanino.github.io/blob/master/_includes/head.html-->
+{% if page.math %}
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript">
+MathJax.Hub.Config({
+extensions: ["tex2jax.js"],
+"HTML-CSS": { scale: 200}
+});
+</script>
+{% endif %}
+
+
+
 <!-- Icons -->
 <!-- 16x16 -->
 <link rel="shortcut icon" href="{{ site.url }}/favicon.png">

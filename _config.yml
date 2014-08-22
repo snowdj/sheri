@@ -1,26 +1,29 @@
-title: "Vernon R. King, III"
-description: "A collection of writings and updates from Vernon R. King, III: Follower of Jesus. Husband to Katie. Father to many. Student at SEBTS."
-keywords: ["Vernon R. King III", "PJ King", "PJ", "Vernon", "Christian", "Christ", "God", "Lord", "church", "ecclesiology", "baptist", "SBC", "gospel"] 
+title: "Sheri's Blog"
+tagline: Digital home.
+description: "A collection of writings and updates from Sheri."
+keywords: ["Sheri","Stock", "China"] 
 url: http://snowdj.github.io/sheri
 files: http://snowdj.github.io/sheri/files
 
 # Owner/author information
 owner:
-  name:           Vernon King
-  email:          mail@vernonking.org
-  twitter:        vrking3
-  facebook:       pjking07
-  broadcast:      "http://broadcast.app.net/44043/vernonkingorg/"
-  amazon:         "vernonking-20"
-  goodreads:      pjking07
+  name:           Sheri
+  email:          mail@
+  twitter:        snowdj1984
+  facebook:       
+  broadcast:      ""
+  amazon:         ""
+  goodreads:      
+  disqus: snowdj
+  location: "Canada"
   github:         
-    user:         pjking07
-    repo:         vernonking.org
+    user:         Sheri
+    repo:         
 
 analytics:
     google:
-        code:     UA-47683767-1
-        name:     vernonking.org
+        code:     #UA-47683767-1
+        name:     #vernonking.org
     #gosquared:  GSN-467829-L
 
 # Links to include in top navigation
@@ -28,14 +31,16 @@ analytics:
 links:
   - title: CV
     url: /cv/
-  - title: Sermons
-    url: /sermons/
+  - title: blogs
+    url: /blogs/
   - title: Papers
     url: /papers/
   - title: Reviews
     url: /reviews/
   - title: Archives
     url: /archives/
+  - title: About
+    url: /about/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
