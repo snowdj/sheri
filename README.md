@@ -1,4 +1,0 @@
-sheri
-=====
-
-new style blog
