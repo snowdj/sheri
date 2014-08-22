@@ -1,9 +1,11 @@
 ---
-layout: post-no-feature
+layout: post
 title: "A Longform Post to Cogitate"
 description: "Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage."
-category: articles
+category: blogs
 tags: [sample post, readability, test]
+image:
+  feature: family.jpg
 ---
 
 Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney's. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.
