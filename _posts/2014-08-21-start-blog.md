@@ -1,7 +1,7 @@
 ---
 title: Starting to blog
 layout: post
-category: blogs
+category: articles
 tag: blog
 context: "start to do something."
 intro: "blogging is good."

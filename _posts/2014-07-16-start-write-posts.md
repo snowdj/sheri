@@ -1,7 +1,7 @@
 ---
 title: Start to write a post
 layout: post
-category: posts
+category: articles
 tags: [seminary, fbc-durham]
 description: "description for blog"
 keywords: [write, post]

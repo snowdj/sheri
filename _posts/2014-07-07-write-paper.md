@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Start to write paper
-category: papers
+category: articles
 tags: [papers]
 description: "description."
 keywords: [paper]
