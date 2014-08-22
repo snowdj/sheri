@@ -2,7 +2,7 @@ title:            andrewlewiscampbell.github.io
 tagline:          github pages
 description:      Describe your website.
 #Comment out url when working locally to resolve base urls correctly
-url: http://snowdj.github.io/sheri
+url: /sheri
 
 # Owner/author information
 owner:
