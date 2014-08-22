@@ -4,7 +4,7 @@ description:      I just want to share some things interesting.
 #Comment out url when working locally to resolve base urls correctly
 #url: allanino.me
 # Hack to use in Twitter API. {{ site.url }} wasn't working and url messy up other things
-domain: http://snowdj.github.io/sheri
+#domain: http://snowdj.github.io/sheri
 url: http://snowdj.github.io/sheri
 # Owner/author information
 owner:
