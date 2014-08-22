@@ -1,5 +1,4 @@
 <!doctype html>
-<html lang="en">
 <meta charset="utf-8">
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 <meta name="description" content="{{ page.description }}">
@@ -15,6 +14,9 @@
 
 <link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
+<!-- Favicon -->
+<link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -23,16 +25,15 @@
 <!-- Type -->
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="{{ site.url }}/assets/css/entypo.css" media="all">
+<link rel="stylesheet" href="{{ site.url }}/assets/css/style.css" media="all">
 
 <!-- In order to use Calendas Plus, you must first purchase it. Then, create a font-face package using FontSquirrel.
 <link rel='stylesheet' href='{{ site.url }}/assets/cal.css' media='all' />
 -->
 
-
-
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ site.url }}/assets/css/i.css">
+<link rel="stylesheet" href="{{ site.url }}/assets/css/syntax.css">
 
 <!-- Fresh Squeezed jQuery -->
 
@@ -43,6 +44,18 @@
 <!-- Load Modernizr -->
 <script src="{{ site.url }}/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
 
+<!-- Load MathJax for LaTeX awesomeness -->
+{% if page.math %}
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript">    
+  MathJax.Hub.Config({    
+    extensions: ["tex2jax.js"],    
+    "HTML-CSS": { scale: 200}    
+  });    
+</script>
+{% endif %}
 
 <!-- Icons -->
 <!-- 16x16 -->

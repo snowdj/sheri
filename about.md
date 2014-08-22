@@ -1,32 +1,23 @@
 ---
-layout: post-light-feature
+layout: page
 permalink: /about/index.html
-title: An Attempt at Open-Source using GIT
-description: I'm smashing my head against a brick wall until I understand version control and Jekyll.
-tags: [about, Jekyll, theme, responsive]
+title: About
+description: I'm Allan Inocêncio de Souza Costa. This is my name, at least.
+tags: [about]
 image:
-  feature: soft-trees.jpg
+  feature:  night_sunset_f.jpg
 ---
 
-This is built on the Balzac Jekyll theme by Cole Townsend. I'd love to think that I one day I might be able to offer up a pull request of some modest use to help contribute.
+I found it difficult to say I'm a bunch of words or vocalized sounds, so I think it's better to make the distinction. Anyway, I tend to use just Allan Costa for shortness or allanino for really short. I like the sound of it, rhymes with neutrino.
 
-I'm going to use this theme as my boilerplate and attempt to add in better support for image-focused content.
+Besides my interest in ontological questions and other philosophical matters, I'm true passionate about Mathematics. Sometimes I have this sense of wonder when faced by its beautiful, even mysterious, structures and patterns. It's not so surprising that I'm a platonist, in the sense that I believe that mathematics is discovered, not invented.
 
-I want to start working in the open more so that I can learn more whilst contributing to the community in whatever little way possible.
+I have also a lot of interest in diverse fields, from physics and astronomy, which I studied as an undergraduate for two years, to artificial intelligence, programming, science fiction, photography and music (I'm teaching myself to play the piano).
 
-##About Balzac
+Currently, I'm a student at UFSCar (Universidade Federal de São Carlos) in Brazil, doing Master's studies in Mathematics.
 
-### Features
-* flexible, uses max-width for responsive goodness
-* responsive drop down menu
-* retina images using @2x
-* post loop in the footer showing 3 latest post
-* custom portfolio page for case studies
+I created this website to talk about the things I like, which includes all of above subjects and a little more. But more than a blog, it is also a hub for any projects I come to conceive.
 
-### Acknowledgements
-CT took [Michael Rose](http://twitter.com/mmistakes)'s theme [Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes/). Having a prebuilt archive and the YAML front-matter already set up was a great help. 
+If you want more: [about.me/allanino][1]
 
-Many thanks to Daniel Bruce for the wonderful Entypo icons. Those can be picked up at [entypo.com](http://entypo.com), but are included with the source files. It's also <b>retina ready</b> via retina.js. Check out how that works over at [retinajs.com](http://retinajs.com).
-
-### The Name
-Balzac was a famous writer, known for his beautiful prose. I read some Balzac in school, but mostly feel comfort in the name of my favorite coffee shop in Stratford, Ontario. 
+[1]:http://about.me/allanino
