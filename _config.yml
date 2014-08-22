@@ -1,6 +1,6 @@
-title:            Allan Costa
+title:            Sheri
 tagline:          My digital home.
-description:      I just want to share some things and keep all in the same place.
+description:      I just want to share some things interesting.
 #Comment out url when working locally to resolve base urls correctly
 #url: allanino.me
 # Hack to use in Twitter API. {{ site.url }} wasn't working and url messy up other things
@@ -8,16 +8,16 @@ description:      I just want to share some things and keep all in the same plac
 url: http://snowdj.github.io/sheri
 # Owner/author information
 owner:
-  name:           Allan Costa
+  name:           sheri
   avatar:         avatar.png
   bio:            "A learner."
-  email:          allan@allanino.me
-  googleplus:     "108116428141422531231"
-  twitter:        allanino      
-  github:         allanino
-  flickr:         allanino      
-  disqus:         allanino
-  location:       "Brazil"
+  email:          sheri
+  googleplus:     ""
+  twitter:        snowdj1984      
+  github:         snowdj
+  flickr:               
+  disqus:         snowdj
+  location:       "Canada"
 
 tools:
   standards:      "HTML, SCSS, Jekyll"
@@ -32,8 +32,14 @@ links:
     url: /projects
   - title: Photography
     url: /photography
+  - title: Math
+    url: /blog/math
+  - title: Programming
+    url: /blog/programming      
   - title: About
     url: /about
+  - title: Other
+    url: /blog/everything-else    
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Sao_Paulo

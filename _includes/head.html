@@ -66,13 +66,15 @@
     <header class="site-header">
       <div class="wrap">
         <hgroup>
-          <h1><a href="/">{{ site.title }}</a></h1>
+          <!-- manually change href -->
+          <h1><a href="/sheri">{{ site.title }}</a></h1>
         </hgroup>
         <a href="#nav" class="menu"><span class='icons'>☰</span></a>
         <nav role="navigation">
           <ul>
             <li>
-              <a href="/" title="{{ site.title }}">Home</a>
+              <!-- manually change href -->
+              <a href="/sheri" title="{{ site.title }}">Home</a>
             </li>
             
             {% for link in site.links %}
